@@ -10,10 +10,8 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 import { EditControl } from "react-leaflet-draw";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
-import { useState } from "react";
 
 function MapComponent(props) {
-  const [map, setMap] = useState(null);
   const _created = (e) => {
     props.setBySelection(e.layer._latlngs[0]);
   }
