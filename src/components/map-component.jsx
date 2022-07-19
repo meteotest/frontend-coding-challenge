@@ -10,7 +10,6 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 import { EditControl } from "react-leaflet-draw";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
-import Legend from "./map-legend";
 import { useState } from "react";
 
 function MapComponent(props) {
@@ -67,7 +66,6 @@ function MapComponent(props) {
           </CircleMarker>
         ))}
       </MarkerClusterGroup>
-      <Legend map={map}></Legend>
     </MapContainer>
   );
 }
